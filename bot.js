@@ -38,7 +38,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === prefix+'ريب'){
-        message.channel.send("#rep "+"<596443880413593613" + myid + ">")
+        message.channel.send("#rep "+"596443880413593613" + myid + ">")
     }
 });
 
@@ -89,7 +89,7 @@ client2.on('message', message => {
 
 client2.on('message', message => {
     if(message.content === prefix+'ريب'){
-        message.channel.send('#rep <@286088294234718209>')
+        message.channel.send('#rep <596443880413593613>')
     }
 });
 
