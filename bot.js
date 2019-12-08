@@ -127,5 +127,4 @@ if (!rank) return message.reply(' ')
 });
 
 
-client.login(process.env.TOKEN);
-client2.login(process.env.TOKEN2);
+client.login(process.env.BOT_TOKEN);
