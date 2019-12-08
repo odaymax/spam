@@ -2,11 +2,11 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const client2 = new Discord.Client();
 const myid = ['652758616444502037'];
-const prefix = ['+'];
+const prefix = ['-'];
 
 client.on('ready', () => {
    console.log(`----------------`);
-   console.log(`Credit Farmm - Script By : xOday `);
+   console.log(`Credit Farmm - Script By : Kahrbaa `);
    console.log(`----------------`);
    console.log(`Loadinng`);
    console.log(`Loadinng.`);
@@ -38,7 +38,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === prefix+'ريب'){
-        message.channel.send("#rep "+"<@596443880413593613" + myid + ">")
+        message.channel.send("#rep "+"<@" + myid + ">")
     }
 });
 
@@ -47,7 +47,7 @@ if (message.content === prefix+'spam') {
       let count = 0;
       let ecount = 0;
       for(let x = 0; x < 90000; x++) {
-        message.channel.send(`**xxxxxxSpppapapapaammmmmm سببآآآآآآآآآم مممممم مسمشمسسيشمي شس **[ " ${x} " ]`)
+        message.channel.send(`**Credit Spam , Frame , Credit By Kahrba , Farm Credit By Kahrba, ez Farm - كردت اسبام اسبام اسبام اوف ءف اح اح نار ج **[ " ${x} " ]`)
           .then(m => {
             count++;
           })
@@ -67,8 +67,8 @@ client.on('message', message => {
 
 
 
-if (command == "ارسل") {
-let rank = message.guild.member(message.author).roles.find('name', 'Role.xOday');
+if (command == "تحدث") {
+let rank = message.guild.member(message.author).roles.find('name', 'Role.Kahrbaa');
 if (!rank) return message.reply(' ')
   message.channel.send(args.join("  "))
     message.delete();
@@ -89,7 +89,7 @@ client2.on('message', message => {
 
 client2.on('message', message => {
     if(message.content === prefix+'ريب'){
-        message.channel.send('#rep <@596443880413593613>')
+        message.channel.send('#rep <@286088294234718209>')
     }
 });
 
@@ -98,7 +98,7 @@ if (message.content === prefix+'spam') {
       let count = 0;
       let ecount = 0;
       for(let x = 0; x < 90000; x++) {
-        message.channel.send(`**xxxxxSppppapapaaammmmm سباااااااآآآآآآآآم طاااااط نعففففف كريديت **[ " ${x} " ]`)
+        message.channel.send(`**Credit Spam , Frame , Credit By Kahrba , Farm Credit By Kahrba, ez Farm - كردت اسبام اسبام اسبام اوف ءف اح اح نار ج **[ " ${x} " ]`)
           .then(m => {
             count++;
           })
@@ -118,8 +118,8 @@ client2.on('message', message => {
 
 
 
-if (command == "ارسل") {
-let rank = message.guild.member(message.author).roles.find('name', 'Role.xOday');
+if (command == "تحدث") {
+let rank = message.guild.member(message.author).roles.find('name', 'Role.Kahrbaa');
 if (!rank) return message.reply(' ')
   message.channel.send(args.join("  "))
     message.delete();
@@ -127,4 +127,5 @@ if (!rank) return message.reply(' ')
 });
 
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.TOKEN);
+client2.login(process.env.TOKEN2);
